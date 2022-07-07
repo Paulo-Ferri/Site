@@ -1,0 +1,81 @@
+.about_container {
+  background-color: #00458F;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 99.9vh;
+  top: 0;
+}
+
+.about_content {
+  display: flex;
+  width: 60vw;
+  height: 40vh;
+}
+
+.about_container > h2 {
+  font-family: 'Bebas Neue', cursive;
+  color: #FDC500;
+  font-size: 60px;
+}
+
+.about_content > p {
+  margin-top: 2vh;
+  color: #FDC500;
+  font-family: 'Nunito', sans-serif;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.custom-shape-divider-bottom-about {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-about .about_svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 10vh;
+  margin-top: -1.1px;
+}
+
+.custom-shape-divider-bottom-about .shape-fill {
+  fill: #00387E;
+}
+
+@media screen and (max-device-width: 768px) {
+  .about_container {
+    height: 99.7vh;
+    width: 105vw;
+  }
+
+  .custom-shape-divider-bottom-about {
+    width: 100vw;
+  }
+
+  .about_content {
+    width: 90vw;
+  }
+
+  .about_container > h2 {
+    font-size: 100px;
+  }
+
+  .about_content > p {
+    font-size: 40px
+  }
+
+  .custom-shape-divider-bottom-about .about_svg {
+    height: 5vh;
+  }
+
+}

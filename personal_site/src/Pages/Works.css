@@ -1,0 +1,151 @@
+.works_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00387E;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.project_details_buttons > button > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  height: 100%;
+}
+
+.project_video_container {
+  position: relative;
+  z-index: 1;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: black;
+  opacity: 20%;
+}
+
+.full_screen_video_container {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(3px);
+}
+
+.projects_exhibition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+  justify-content: flex-start;
+  gap: 3vh;
+  width: 40vw;
+  overflow-y: scroll;
+  padding: 3vh 0;
+}
+
+.project_selector {
+  background-color: #00458F;
+  box-shadow: 0 5px 0  #003772;
+  border-radius: 5px;
+  color: #FDC500;
+  display: flex;
+  align-items: center;
+  width: 23.5vw;
+  min-height: 15vh;
+  padding-left: 3vw;
+  cursor: pointer;
+}
+
+.active_project {
+  border: 1px solid #FDC500;
+  min-height: 14.9vh;
+}
+
+.project_selector > img {
+  user-select: none;
+  height: 65%;
+}
+
+.project_selector > h1 {
+  position: relative;
+  user-select: none;
+  font-size: 32px;
+  font-family: 'Bebas Neue', cursive;
+  width: 100%;
+  text-align: center;
+}
+
+.projects_exhibition::-webkit-scrollbar {
+  width: 3px;
+}
+
+.projects_exhibition::-webkit-scrollbar-thumb {
+  background-color: #FDC500;
+  border-radius: 20px;
+}
+
+.projects_exhibition::-webkit-scrollbar-thumb:hover {
+  background-color: orange;
+}
+
+.project_details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+  width: 50vw;
+  height: 75vh;
+  margin-right: 5vw;
+}
+
+.project_details > h1 {
+    font-family: 'Bebas Neue', cursive;
+    color: #FDC500;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.project_details > p {
+  padding-top: 5vh;
+  font-family: 'Nunito', sans-serif;
+  height: 50%;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.project_details_buttons > button {
+  outline: none;
+  border-radius: 10px;
+  background-color: #FDC500;
+  box-shadow: 0 5px 0 #ca9e00;
+  font-weight: 900;
+  width: 48%;
+  height: 7vh;
+  cursor: pointer;
+}
+
+.project_details_buttons > button:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+.project_details_buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (max-device-width: 768px) {
+  .works_container {
+    width: 105vw;
+  }
+}
