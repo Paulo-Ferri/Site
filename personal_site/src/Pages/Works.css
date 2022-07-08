@@ -140,12 +140,15 @@
 
 .project_details_buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 3vw;
   width: 100%;
 }
 
 @media screen and (max-device-width: 768px) {
   .works_container {
+    margin-top: -1vh;
     width: 105vw;
+    height: 100vh;
   }
 }

@@ -37,11 +37,13 @@ function Works() {
               <h1>{filteredProject.projectName}</h1>
               <p>{filteredProject.projectDescription}</p>
               <div className="project_details_buttons">
-                <button
-                  onClick={() => setIsOpen(true)}
-                >
-                  Abrir exibição do projeto
+              {filteredProject.hasExhibition === true && (
+                  <button
+                    onClick={() => setIsOpen(true)}
+                  >
+                    Abrir exibição do projeto
                 </button>
+                )}
                 <button>
                   <a href={filteredProject.repo} target="_blank" rel="noreferrer">
                     Abrir repositório

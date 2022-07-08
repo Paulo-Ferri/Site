@@ -1,12 +1,28 @@
 import React from 'react';
 import '../About.css';
+import bugIcon from '../../images/bug-icon.png';
+import apiIcon from '../../images/api-icon.png';
+import responsiveIcon from '../../images/responsive-icon.png';
+import javascriptIcon from '../../images/javascript-icon.png';
+import htmlIcon from '../../images/html-icon.png';
+import cssIcon from '../../images/css-icon.png';
 
 function About() {
   return(
       <div className="about_container" id="about_container">
-        <h2>Who am I?</h2>
+        <div className="icons_about_left">
+          <img className="bug_icon_about" src={bugIcon} alt="icon representing a bug" />
+          <img className="api_icon_about" src={apiIcon} alt="icon representing an API" />
+          <img className="responsive_icon_about" src={responsiveIcon} alt="icon representing an responvie application" />
+        </div>
+        <div className="icons_about_right">
+          <img className="javascript_icon_about" src={javascriptIcon} alt = "icon representing JavaScript" />
+          <img className="html_icon_about" src={htmlIcon} alt = "icon representing html" />
+          <img className="css_icon_about" src={cssIcon} alt = "icon representing css" />
+        </div>
+        <h2>Who I am</h2>
         <div className="about_content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ipsum nisl, laoreet et sem id, ullamcorper porttitor turpis. Integer pellentesque sed augue sed lobortis. Phasellus sodales auctor convallis. Vestibulum et sagittis sem, ut mollis est. Ut condimentum, lacus nec convallis consequat, arcu ex imperdiet nisl, at maximus quam purus lacinia sem. Sed aliquam feugiat porttitor. Fusce vehicula enim quis turpis consectetur placerat. Nam posuere nisi vitae dui sagittis malesuada.</p>
+          <p>Hello visitor, how are you? I'm Paulo Afonso, I'm a law graduate from IMED college and during my study period I participated in various work environments, both in the private and public areas. I seek to re-enter the job market through web development, a dream that I am working hard to achieve. I developed this site to share a little of my study and also to have my own space in this gigantic sea that is the web. I'm currently studying web development at Trybe by the XP class and I'm open to proposals!</p>
         </div>
         <div className="custom-shape-divider-bottom-about">
           <svg className="about_svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

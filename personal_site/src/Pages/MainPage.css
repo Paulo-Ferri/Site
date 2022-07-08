@@ -80,10 +80,9 @@
 
 @media screen and (max-device-width: 768px) {
   .main_page {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 99.95vh;
     max-width: 105vw;
     min-width: 105vw;
   }
@@ -111,6 +110,7 @@
 
   .custom-shape-divider-bottom-1653059723 {
     width: 105vw;
+    margin-bottom: -0.01vh;
   }
   
   .custom-shape-divider-bottom-1653059723 .mainpage_svg {
