@@ -1,7 +1,6 @@
 import React from 'react';
 import '../MainPage.css';
 import profilePicture from '../../images/profile_picture.png';
-import profileBackground from '../../images/profile_background5.svg';
 
 function MainPagePT() {
   return(
@@ -13,7 +12,6 @@ function MainPagePT() {
         <h3>Estudante de desenvolvimento web full stack</h3>
       </div>
       <div className="profile_picture_container">
-        <img src={profileBackground} className="profile_background" alt="profile background"/>
         <img src={profilePicture} alt="profile" className="profile_picture"/>
       </div>
     </div>
