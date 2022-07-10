@@ -1,8 +1,7 @@
 .footer_component {
   font-family: 'Bebas Neue', cursive;
   color: #FDC500;
-  margin-top: -10.1vh;
-  width: 100vw;
+  max-width: 100vw;
   height: 50vh;
   background-color: #001c39;
   display: flex;
@@ -26,6 +25,7 @@
   .footer_component {
     width: 105vw;
     font-size: 60px;
+    max-width: 105vw;
   }
 
   .footer_component > h1{

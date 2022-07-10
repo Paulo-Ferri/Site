@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 40vw;
   height: 90vh;
 }
 
@@ -40,7 +40,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 60vw;
   height: 100vh;
 }
 
@@ -55,17 +55,19 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 105vw;
+  width: 100vw;
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
+  margin-bottom: -0.1vh;
 }
 
 .custom-shape-divider-bottom-1653059723 .mainpage_svg {
+  margin-top: -3vh;
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 10vh;
+  height: 5vh;
 }
 
 .custom-shape-divider-bottom-1653059723 .shape-fill {
@@ -104,6 +106,7 @@
 
   .profile_picture_container {
     height: 59vh;
+    width: 100%;
   }
 
   .profile_picture {
