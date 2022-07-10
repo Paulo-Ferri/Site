@@ -175,6 +175,11 @@
     margin-bottom: 26vh;
   }
 
+  .video_player {
+    position: relative;
+    z-index: 0;
+  }
+
   .works_container {
     margin-top: -1vh;
     width: 105vw;
