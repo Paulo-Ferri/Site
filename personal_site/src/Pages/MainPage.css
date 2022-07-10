@@ -82,10 +82,10 @@
   }
   
   .apresentation_container {
-    margin-top: 10vh;
+    border: 1px solid red;
     display: flex;
     align-items: center;
-    height: 49vh;
+    height: 40vh;
     width: 105vw;
     margin-left: 0;
   }
@@ -104,10 +104,12 @@
   }
 
   .profile_picture_container {
-    height: 70%;
+    height: 59vh;
   }
 
   .profile_picture {
+    width: 100%;
+    height: 100%;
     right: 0;
   }
   .custom-shape-divider-bottom-1653059723 {

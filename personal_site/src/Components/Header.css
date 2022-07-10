@@ -135,6 +135,11 @@ text-align: center;
 
 @media screen and (max-device-width: 767px){
 
+  .header_mobile {
+    position: absolute;
+    z-index: 100;
+  }
+
   .header_component {
     background-color: #001c39;
     border-radius: 0 0 20px 0;
