@@ -188,7 +188,7 @@
   .javascript_icon_about {
     height: 8vh;
     width: 15vw;
-    margin-bottom: 15vh;
+    margin-bottom: 12vh;
     margin-right: 0;
   }
   
@@ -196,14 +196,14 @@
     height: 8vh;
     width: 15vw;
     margin-right: 0;
-    margin-bottom: 10vh;
+    margin-bottom: 8vh;
   }
   
   .css_icon_about {
     height: 8vh;
     width: 15vw;
     margin-right: 0;
-    margin-bottom: 15vh;
+    margin-bottom: 12vh;
   }
 }
 

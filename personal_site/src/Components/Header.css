@@ -136,7 +136,7 @@ text-align: center;
 @media screen and (max-device-width: 767px){
 
   .header_mobile {
-    position: absolute;
+    position: fixed;
     z-index: 100;
   }
 
