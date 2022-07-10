@@ -173,6 +173,7 @@
     position: fixed;
     margin-left: 98vw;
     margin-bottom: 26vh;
+    z-index: 51;
   }
 
   .works_container {

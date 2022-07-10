@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../Works.css';
 import VideoPlayer from '../../Components/VideoPlayer';
 import { Dialog } from '@headlessui/react'
@@ -8,7 +8,24 @@ import closeIcon from '../../images/close-icon.png';
 function Works() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState('Recipes App');
+  function getWindowDimensions() {
+    const { outerWidth: width, outerHeight: height } = window;
+    return {
+      width,
+      height
+    };
+  }
 
+  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   return (
     <>
       <div className="works_container" id="works_container">
