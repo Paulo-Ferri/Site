@@ -27,6 +27,7 @@ const VideoPlayer = ({ project }) => {
       height={windowDimensions.width < 768 ? "27%" : windowDimensions.width >= 768 && windowDimensions.width < 960 ? "60%" : "75%" }
       url={project}
       controls="true"
+      playsinline="true"
   />
   )
 };
