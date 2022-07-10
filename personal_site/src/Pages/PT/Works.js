@@ -67,6 +67,7 @@ function Works() {
                   <button className="close_video_btn" onClick={() => setIsOpen(false)}>
                     <img src={closeIcon} alt="close video" />
                   </button>
+                  {/* <iframe width="1424" height="627" src="https://www.youtube.com/embed/45ma2YOKS70" title="TrybeTunes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                 </div>
               </Dialog>
             </>

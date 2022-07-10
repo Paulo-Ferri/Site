@@ -29,7 +29,7 @@ const projectsDetails = [
   {
     projectName: "Trybetunes",
     projectDescription: "O projeto Trybetunes é um serviço de música que consome a API do iTunes, possibilitando com que o usuário procure por artistas ou bandas e tenha a sua disposição todos os albums relacionados, podendo ouvir amostras de todas as músicas referentes ao album. Com este projeto muitas habilidades foram treinadas, incluindo HTML, CSS, JS e React. Este projeto foca em componentes de classes no React, o ciclo de vida dos componentes, operações assíncronas e mais.",
-    video: TrybeTunes,
+    video: "https://www.youtube.com/embed/45ma2YOKS70",
     repo: "https://github.com/Paulo-Ferri/TrybeTunes",
     icon: trybetunes_icon,
     hasExhibition: true,
