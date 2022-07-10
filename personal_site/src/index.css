@@ -8,6 +8,11 @@ body {
   overflow: overlay;
 }
 
+html {
+  overflow: visible !important;
+  padding-right: 0 !important;
+}
+
 * {
   margin: 0;
   padding: 0;

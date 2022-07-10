@@ -3,6 +3,7 @@ import About from './PT/About';
 import MainPage from './PT/MainPage';
 import Works from './PT/Works';
 import Header from '../Components/Header';
+import Footer from '../Components/Footer';
 
 function PtPage() {
   return (
@@ -11,6 +12,7 @@ function PtPage() {
       <MainPage />
       <About />
       <Works />
+      <Footer />
     </div>
   )
 }

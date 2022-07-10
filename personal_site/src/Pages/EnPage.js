@@ -3,6 +3,7 @@ import About from './EN/About';
 import MainPage from './EN/MainPage';
 import Works from './EN/Works';
 import Header from '../Components/Header';
+import Footer from '../Components/Footer';
 
 function EnPage() {
   return (
@@ -11,6 +12,7 @@ function EnPage() {
       <MainPage />
       <About />
       <Works />
+      <Footer />
     </div>
   )
 }

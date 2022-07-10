@@ -24,14 +24,66 @@
   z-index: 2;
 }
 
-.toggle_header_btn > img {
-  height: 4vh;
-  width: 8vw;
-  filter: invert(76%) sepia(83%) saturate(1796%) hue-rotate(359deg) brightness(100%) contrast(106%);
+.menu_btn {
+  margin-left: 5vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  height: 5vh;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.header_mobile {
+  position: fixed;
+  backdrop-filter: blur(5px);
+  height: 10vh;
+  width: 100vw;
+  z-index: 100;
+}
+
+.menu_btn_inside {
+  width: 10vw;
+  height: 0.5vh;
+  background: #FDC500;
+  border-radius: 5px;
+  transition: all .3s ease-in-out;
+}
+
+.menu_btn_inside::before,
+.menu_btn_inside::after {
+  content: '';
+  position: absolute;
+  width: 10vw;
+  height: 0.5vh;
+  background: #FDC500;
+  border-radius: 5px;
+  transition: all .3s ease-in-out;
+}
+
+.menu_btn_inside::before {
+  transform: translateY(-1vh);
+  right: 0.1vw;
+}
+.menu_btn_inside::after {
+  transform: translateY(1vh);
+  right: 0.1vw;
+}
+.menu_btn.open .menu_btn_inside {
+  background: transparent;
+}
+.menu_btn.open .menu_btn_inside::before {
+  transform: rotate(45deg);
+}
+.menu_btn.open .menu_btn_inside::after {
+  transform: rotate(-45deg);
 }
 
 .header_nav {
   display: flex;
+  gap: 3vh;
 }
 
 .header_nav > a {
@@ -72,7 +124,7 @@ width: 33%;
 text-align: center;
 }
 
-@media screen and (min-device-width: 768px){
+@media screen and (min-device-width: 769px){
   .header_nav > a:hover {
     color: #00387E;
     box-shadow: inset 100px 0 0 0 #FDC500;
@@ -81,10 +133,16 @@ text-align: center;
   }
 }
 
-@media screen and (max-device-width: 768px){
+@media screen and (max-device-width: 767px){
 
   .header_component {
-    width: 100vw;
+    background-color: #001c39;
+    border-radius: 0 0 20px 0;
+    height: 100vh;
+    width: 70vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 8vh 0 0 5vw;
   }
 
   .header_nav > a {
@@ -92,15 +150,13 @@ text-align: center;
   }
   
   .header_nav {
-    width: 70vw;
-    justify-content: space-evenly;
-    gap: 5vw;
+    margin-top: 10vh;
+    flex-direction: column;
   }
 
   .nav_lang {
-
     height: 5vh;
-    width: 30vw;
+    width: 20vw;
     font-size: 30px;
   }
   
@@ -111,5 +167,11 @@ text-align: center;
   .nav_lang > span {
   display: block;
   width: 33%;
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 960px) {
+  .nav_lang {
+    width: 8vw;
   }
 }

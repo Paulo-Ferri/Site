@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { useLocation, useNavigate } from 'react-router-dom';
 import './Header.css'
-import headerIcon from '../images/header-icon.png';
 
 function Header() {
   const location = useLocation();
@@ -28,7 +27,7 @@ function Header() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
   return (
-    windowDimensions.width > 768 ? (
+    windowDimensions.width > 767 ? (
       <div className="header_component">
       <div className="nav_lang">
         <button
@@ -55,45 +54,53 @@ function Header() {
         <AnchorLink href="#works_container">
         { location.pathname === '/' ? "Projetos" : "Projects" }
         </AnchorLink>
+        <AnchorLink href="#footer_container">
+        { location.pathname === '/' ? "Contato" : "Contact" }
+        </AnchorLink>
       </nav>
     </div>
     ) :
-    <div>
+    <div className="header_mobile">
       <button
         className="toggle_header_btn"
         onClick={() => setIsHeaderOpen(!isHeaderOpen)}
       >
-        <img src={headerIcon} alt="display header icon" />
+        <div className={isHeaderOpen ? "menu_btn open" : "menu_btn"}>
+          <div className="menu_btn_inside" />
+        </div>
       </button>
-      {isHeaderOpen === true && (
-              <div className="header_component">
-              <div className="nav_lang">
-                <button
-                  className="pt_btn"
-                  onClick={() => navigate('/')}
-                >
-                  PT
-                </button>
-                <span>|</span>
-                <button
-                  className="en_btn"
-                  onClick={() => navigate('/en')}
-                >
-                  EN
-                </button>
-              </div>
-              <nav className= "header_nav">
-                <AnchorLink href="#main_component">
-                  Home
-                </AnchorLink>
-                <AnchorLink href="#about_container">
-                { location.pathname === '/' ? "Sobre" : "About" }
-                </AnchorLink>
-                <AnchorLink href="#works_container">
-                { location.pathname === '/' ? "Projetos" : "Projects" }
-                </AnchorLink>
-              </nav>
-            </div>
+      {isHeaderOpen && (
+        <div className="header_component">
+          <div className="nav_lang">
+            <button
+              className="pt_btn"
+              onClick={() => navigate('/')}
+            >
+              PT
+            </button>
+            <span>|</span>
+            <button
+              className="en_btn"
+              onClick={() => navigate('/en')}
+            >
+              EN
+            </button>
+          </div>
+          <nav className= "header_nav">
+            <AnchorLink href="#main_component">
+              Home
+            </AnchorLink>
+            <AnchorLink href="#about_container">
+              { location.pathname === '/' ? "Sobre" : "About" }
+            </AnchorLink>
+            <AnchorLink href="#works_container">
+              { location.pathname === '/' ? "Projetos" : "Projects" }
+            </AnchorLink>
+            <AnchorLink href="#footer_container">
+              { location.pathname === '/' ? "Contato" : "Contact" }
+            </AnchorLink>
+          </nav>
+        </div>
       )}
     </div>
   );
