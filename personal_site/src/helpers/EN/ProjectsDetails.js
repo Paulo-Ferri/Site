@@ -1,5 +1,3 @@
-import TrybeTunes from '../../videos/TrybeTunes.mp4';
-import recipesapp from '../../videos/recipesappvideo.mp4';
 import trybetunes_icon from '../../images/trybetunes_icon.png';
 import recipe_book_icon from '../../images/recipe-book-icon.png';
 import quiz_icon from '../../images/quiz-icon.png';
@@ -7,13 +5,12 @@ import talker_manager_icon from '../../images/talker-manager-icon.png';
 import store_manager_icon from '../../images/store-manager-icon.png';
 import star_wars_search_icon from '../../images/star-wars-search.png';
 import zoo_functions_icon from '../../images/zoo-functions-icon.png';
-import triviavideo from '../../videos/trivia.mp4';
 
 const projectsDetails = [
   {
       projectName: "Recipes App",
       projectDescription: "The Recipes App project was carried out in a group of three people in order to close the Front End module of the Trybe's course. In the app it is possible to see, search, filter, favorite and follow the progress of preparation of recipes and drinks. The application consumes two different APIs, MealDB and CocktailsDB. The App was developed from the concept of mobile first and has unit tests to test code behavior and reliability with 90% full coverage. The technologies used were HTML, CSS, JS, React, React Hooks and the global state manager context API.",
-      video: recipesapp,
+      video: "https://www.youtube.com/watch?v=sPn4iDyuvgQ",
       repo: "https://github.com/Paulo-Ferri/Recipes-App",
       icon: recipe_book_icon,
       hasExhibition: true,
@@ -21,7 +18,7 @@ const projectsDetails = [
   {
     projectName: "Trivia Game",
     projectDescription: "The Trivia Game project was carried out in a group of three people, exercising group work and soft skills. It consumes the Open Trivia API and shows the player a question with several answers, being able to answer only within the given time. When answering it is possible to check if the answer was correct or not. At the end the player is redirected to a feedback screen and its game is saved on the ranking page. It also consumes Gravatar API to show player photo. The project used as technologies HTML, CSS, JS, React and Redux",
-    video: triviavideo,
+    video: "https://www.youtube.com/watch?v=U39piSUPYzc",
     repo: "https://github.com/Paulo-Ferri/Trivia-Game",
     icon: quiz_icon,
     hasExhibition: true,
@@ -29,7 +26,7 @@ const projectsDetails = [
   {
     projectName: "Trybetunes",
     projectDescription: "Trybetunes is a project that a music searcher were implemented and with it it's possible to listen to all the musics in the searched album results. It consumes the iTunes API and return all the musics samples by album. With this project a lot of abilities were trained, included HTML, CSS, JS and React. This project focus on classes components on React, the life cycle of components, asyncronous operations and more.",
-    video: TrybeTunes,
+    video: "https://www.youtube.com/watch?v=45ma2YOKS70",
     repo: "https://github.com/Paulo-Ferri/TrybeTunes",
     icon: trybetunes_icon,
     hasExhibition: true,

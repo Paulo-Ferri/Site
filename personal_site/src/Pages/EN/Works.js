@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
 import '../Works.css';
-import VideoPlayer from '../../Components/VideoPlayer';
-import { Dialog } from '@headlessui/react'
 import projectsDetails from '../../helpers/EN/ProjectsDetails';
-import closeIcon from '../../images/close-icon.png';
 
 function Works() {
-  const [isOpen, setIsOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState('Recipes App');
 
   return (
@@ -40,10 +36,10 @@ function Works() {
                 <p>{filteredProject.projectDescription}</p>
                 <div className="project_details_buttons">
                   {filteredProject.hasExhibition === true && (
-                    <button
-                      onClick={() => setIsOpen(true)}
-                    >
-                      Open project exhibition
+                    <button>
+                    <a href={filteredProject.video} target="_blank" rel="noreferrer">
+                      Open video exhibition
+                    </a>
                   </button>
                   )}
                   <button>
@@ -53,22 +49,6 @@ function Works() {
                   </button>
                 </div>
               </div>
-              <Dialog 
-                open={isOpen}
-                className="project_video_container"
-                onClose={() => setIsOpen(false)}
-              >
-                <div className="backdrop" />
-                <div className="full_screen_video_container">
-                  <VideoPlayer
-                    className="video_player"
-                    project={filteredProject.video}
-                  />
-                  <button className="close_video_btn" onClick={() => setIsOpen(false)}>
-                    <img src={closeIcon} alt="close video" />
-                  </button>
-                </div>
-              </Dialog>
             </>
           )
         })}
