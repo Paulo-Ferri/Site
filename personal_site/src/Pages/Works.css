@@ -101,6 +101,12 @@
   margin-right: 5vw;
 }
 
+.close_video_btn {
+  cursor: pointer;
+  background-color: transparent;
+  margin-bottom: 65vh;
+}
+
 .project_details > h1 {
     font-family: 'Bebas Neue', cursive;
     color: #FDC500;
@@ -163,6 +169,12 @@
 }
 
 @media screen and (max-device-width: 767px) {
+  .close_video_btn {
+    position: absolute;
+    margin-left: 98vw;
+    margin-bottom: 26vh;
+  }
+
   .works_container {
     margin-top: -1vh;
     width: 105vw;
@@ -251,9 +263,17 @@
 
 @media screen and (min-device-width: 768px) and (max-device-width: 960px) {
   .works_container {
+    max-width: 105vw;
     width: 105vw;
     flex-direction: column;
   }
+
+  .close_video_btn {
+    position: absolute;
+    margin-left: 94vw;
+    margin-bottom: 50vh;
+  }
+
   .projects_exhibition {
     margin-top: 5vh;
     flex-direction: row;

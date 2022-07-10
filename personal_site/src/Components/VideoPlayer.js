@@ -23,8 +23,8 @@ const VideoPlayer = ({ project }) => {
   return(
     <ReactPlayer
       className="video_player"
-      width={windowDimensions.width < 768 ? "100%" : windowDimensions.width >= 768 && windowDimensions.width < 960 ? "90%" :"70%"}
-      height={windowDimensions.width < 768 ? "30%" : windowDimensions.width >= 768 && windowDimensions.width < 960 ? "60%" : "75%" }
+      width={windowDimensions.width < 768 ? "95%" : windowDimensions.width >= 768 && windowDimensions.width < 960 ? "90%" :"70%"}
+      height={windowDimensions.width < 768 ? "27%" : windowDimensions.width >= 768 && windowDimensions.width < 960 ? "60%" : "75%" }
       url={project}
       volume="0.33"
       controls="true"

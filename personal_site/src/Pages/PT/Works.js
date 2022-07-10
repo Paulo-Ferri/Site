@@ -3,6 +3,7 @@ import '../Works.css';
 import VideoPlayer from '../../Components/VideoPlayer';
 import { Dialog } from '@headlessui/react'
 import projectsDetails from '../../helpers/PT/ProjectsDetails';
+import closeIcon from '../../images/close-icon.png';
 
 function Works() {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,6 +64,9 @@ function Works() {
                     className="video_player"
                     project={filteredProject.video}
                   />
+                  <button className="close_video_btn" onClick={() => setIsOpen(false)}>
+                    <img src={closeIcon} alt="close video" />
+                  </button>
                 </div>
               </Dialog>
             </>

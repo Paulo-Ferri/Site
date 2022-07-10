@@ -86,8 +86,8 @@
   .apresentation_container {
     display: flex;
     align-items: center;
-    height: 40vh;
-    width: 105vw;
+    width: 40vw;
+    height: 90vh;
     margin-left: 0;
   }
 
@@ -129,12 +129,17 @@
   }
 
   .profile_picture_container {
-    width: 50vw;
-
+    width: 60vw;
+    height: 100vh;
   }
 
   .profile_picture {
     width: 60vw;
+    inset: 0;
+  }
+
+  .apresentation_container {
+    margin-left: 5vw;
   }
 
   .apresentation_container > h1 {

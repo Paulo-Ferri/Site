@@ -47,6 +47,7 @@
 
 @media screen and (min-device-width: 768px) and (max-device-width: 960px) {
   .footer_component {
+    max-width: 105vw;
     width: 105vw;
     font-size: 40px;
   }
