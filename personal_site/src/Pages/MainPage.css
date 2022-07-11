@@ -139,6 +139,7 @@
   .profile_picture {
     width: 60vw;
     inset: 0;
+    height: 70vh;
   }
 
   .apresentation_container {

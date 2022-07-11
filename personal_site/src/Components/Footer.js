@@ -16,6 +16,7 @@ function Footer() {
         "Fell free to contact me and follow me on the networks!"
         }
       </h1>
+      <h2>pauloferrisouza@gmail.com</h2>
       <div className="footer_icons">
         <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=pauloferrisouza@gmail.com" target="_blank" rel="noreferrer">
           <img src={gmailIcon} alt="gmail icon" />
