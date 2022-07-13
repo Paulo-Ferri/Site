@@ -13,7 +13,7 @@ const projectsDetails = [
       video: "https://www.youtube.com/watch?v=sPn4iDyuvgQ",
       repo: "https://github.com/Paulo-Ferri/Recipes-App",
       icon: recipe_book_icon,
-      hasExhibition: true,
+      hasExhibition: false,
   },
   {
     projectName: "Trivia Game",
@@ -21,7 +21,7 @@ const projectsDetails = [
     video: "https://www.youtube.com/watch?v=U39piSUPYzc",
     repo: "https://github.com/Paulo-Ferri/Trivia-Game",
     icon: quiz_icon,
-    hasExhibition: true,
+    hasExhibition: false,
 },
   {
     projectName: "Trybetunes",
@@ -29,7 +29,7 @@ const projectsDetails = [
     video: "https://www.youtube.com/watch?v=45ma2YOKS70",
     repo: "https://github.com/Paulo-Ferri/TrybeTunes",
     icon: trybetunes_icon,
-    hasExhibition: true,
+    hasExhibition: false,
   },
   {
     projectName: "Store Manager",
